@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-tap-highlight-color:transparent;
+}
+body{
+	font-size: 14px;
+	font-family: "Microsoft Yahei","sans-serif";
+	color: #333;
+}
+/*超链接的下划线去掉*/
+a{
+	text-decoration: none;
+	color: #000;
+}
+/*选中时的下划线去掉*/
+a:hover{
+text-decoration: none;
+}
+/*表单的小圆圈去掉*/
+ol,ul{
+	list-style: none;
+}
+/*input的外轮廓去掉，默认样式去掉*/
+input{
+	outline: none;
+	border: none;
+	-webkit-appearance:none;
+}
+image{
+	background: orange;
+}

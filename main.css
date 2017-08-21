@@ -1,0 +1,179 @@
+*{
+		margin: 0;
+		padding: 0;
+ }
+.xc_layout{
+	    min-width: 320px;
+		max-width: 640px;
+		height: 1000px;
+		/*background: pink;*/
+		margin: 0 auto;
+}
+.xc_layout .xc_header{
+      position: fixed;
+      /*background: green;*/
+      top: 0;
+      left: 0;
+      width: 100%; 
+      height: 50px;
+}
+.xc_layout .xc_header .xc_header_box{
+	position: relative;
+	min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    height: 50px;
+    background: #f5f5f5;
+}
+.xc_layout .xc_header .xc_header_box form{
+padding-right: 40px; 
+padding-left: 10px;
+
+
+}
+.xc_layout .xc_header .xc_header_box form .icon_search{
+	width: 20px;
+	height:20px;
+	position: absolute;
+	left: 13px;
+	top: 10px;
+	background: gray;
+    
+
+}
+.xc_layout .xc_header .xc_header_box form input{
+	width: 100%;
+	height: 30px; 
+    border:1px solid #999; 
+	border-radius: 5px;
+	margin-top:5px;
+	padding-left: 25px; 
+}
+/*我的 的图标的伪类选择器*/
+.xc_layout .xc_header .xc_header_box .mine ::before{
+	content: "";
+	display: block;
+width: 25px;
+height: 25px;
+background-color:gray;
+/*background: url(); */
+}
+.xc_layout .xc_header .xc_header_box .mine{
+	position: absolute;
+	right:5px;
+	top:5px;
+
+}
+
+/*携程banner*/
+.xc_banner{
+
+width: 100%;
+overflow: hidden;
+}
+.xc_banner ul{
+width: 400%;
+}
+.xc_banner ul li{
+	float: left;
+width: 25%;
+line-height: 150px;
+}
+.xc_banner ul li a{
+width: 100%;
+display: block;
+
+}
+.xc_banner ul li a img{
+	display: block;
+	width:100%
+	height:300px; 
+background: blue;
+border: 3px solid #999;
+}
+
+/*主区域布局设计*/
+.main{
+	padding: 5px;
+}
+.main .item{
+margin-bottom: 5px;
+height: 90px;
+/*line-height: 45px;*/
+border-radius: 5px;
+display: flex; 
+text-align: center;
+/*background-color: gray;*/
+}
+.main .item .pub{
+	flex: 1;
+}
+.main .item .sub{
+	flex: 2;
+}
+.item:nth-child(1){
+background: pink;
+}
+.item:nth-child(2){
+background: blueviolet;
+}
+.item:nth-child(3){
+background: yellowgreen;
+}
+.item:nth-child(4){
+background:orange; 
+}
+
+.main .item .pub a {
+	line-height: 90px;
+    height: 90px;
+	color: #fff;
+	
+}
+
+.main .item .sub a {
+	width: 50%;
+	display: block;
+	float: left;
+	line-height: 45px;
+    text-align: center;
+    height: 45px;
+	color: #fff;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+/*消除掉下面的白色边框*/
+.main .item .sub a:nth-last-child(-n+2){
+	border-bottom: none;
+}
+.main .item:last-of-type a{
+	width: 33.33%
+}
+
+  /*自由行部分*/
+  .tavel{
+  	overflow: hidden;
+background: #f5f5f5;
+
+  }
+  .travel ul{
+  	overflow: hidden;
+background: #f5f5f5;
+
+  }
+  .travel ul li{
+  	float: left;
+  	width: 25%;
+  	height: 50px;
+  	line-height:50px ;
+  	text-align: center;
+  	border-bottom: 1px solid #ccc;
+  	border-right: 1px solid #ccc; 
+  }
+  .travel ul li:nth-child(4n){
+  	border-right: none;
+  }
+  .travel ul li:nth-last-child(-n+4){
+  	border-bottom: none;
+
+  }
